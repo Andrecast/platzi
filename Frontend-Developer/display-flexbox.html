@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex; /* Esta propiedad solo se le pone a los contenedores o a los item cuando sean padres (que tengan items dentro de ellos) */
+            background: papayawhip;
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+            height: 500px;
+        }
+        .item {
+            height: 30px;
+            width: 30px;
+            background: purple;
+        }
+        .item:nth-child(2n+1) {
+            background: cyan;
+        } /* Que los item impares sean de otro color */
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="item"></div>
+       <div class="item"></div>
+       <div class="item"></div>
+       <div class="item"></div>
+   </div> 
+</body>
+</html>

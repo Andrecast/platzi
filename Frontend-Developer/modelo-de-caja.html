@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: plum;
+            padding: 20px; /* Rodea al elemento dentro del div y sin la propiedad box-sizing modifica el tamaño del content */
+            box-sizing: border-box; /* Con esta propiedad le decimos que el padding, border y margin no nos afecten la medida total del div */
+            border: 3px dashed hotpink;
+            margin: 20px; /* Me separa los dos div, verticalmente lar margenes se solapan, no queda de 40 sino de 20 */
+        }
+    </style>
+</head>
+<body>
+    <div>Platzi</div>
+    <div>Platzi</div>
+</body>
+</html>
